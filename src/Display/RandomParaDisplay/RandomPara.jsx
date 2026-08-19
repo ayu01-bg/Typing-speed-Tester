@@ -3,10 +3,6 @@ import React, { useState } from "react"
 import DisplayBox from "../DisplayBox/DisplayBox"
 import { typingParagraphs, getParagraph } from "../../content/Paragraph";
 
-
-
-
-
 const Randompara = () => {
     const [selectedParagraph, setselectedParagraph] = useState(null)
 
@@ -21,9 +17,15 @@ const Randompara = () => {
                 <div className="row border border-2 gap-5 p-2 m-0 randomDisplay-wrapper ">
 
 
-                    <DisplayBox />
+                    <DisplayBox
+                        paragraph={selectedParagraph}
+                        onStart={handleClick}
+                    />
 
 
+                    {/* <TypingBox
+                        paragraph={selectedParagraph}
+                    /> */}
                 </div>
             </div>
         </>
