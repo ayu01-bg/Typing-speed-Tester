@@ -1,0 +1,244 @@
+@import './Fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #224248;
+    --primaryColor: #325E6A;
+    --secondaryColor: #44A1A4;
+    --highlightColor: #FF9A00;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Navbar CSS starts */
+.navbar-container {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.10),
+            rgba(255, 255, 255, 0.04));
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+
+.navbar-brand {
+    font-family: "Poppins", serif;
+}
+
+.navbar-nav-link {
+    font-size: 25px;
+    font-family: "bungee", serif;
+}
+
+.navbar-nav-link:hover {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.10),
+            rgba(255, 255, 255, 0.04));
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+/* Navbar CSS ends */
+
+.heroMainPage {
+    height: 100%;
+    background-color: var(--primarycolor);
+
+}
+
+
+
+/* Hero CSS Starts */
+
+.heroPage-wrapper {
+    background-image: linear-gradient(rgba(36, 35, 35, 0.7)), url("./assets/images/HeroBackgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+}
+
+.hero_title1 {
+    font-family: "rubik", serif;
+    color: var(--secondaryColor);
+}
+
+.hero_title {
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+.hero_word {
+    font-family: "Poppins", sans-serif;
+    color: var(--secondaryColor);
+    font-size: 90px;
+}
+
+.hero_highlight {
+    font-family: "nesifer", sans-serif;
+    color: var(--highlightColor);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 85px;
+}
+
+.hero_description {
+    color: rgb(221, 226, 226);
+    font-size: 18px;
+}
+
+.downArrow_wrapper {
+    background-color: rgba(194, 190, 190, 0.5);
+    border: none;
+    padding: 12px;
+    animation: bounce 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate;
+}
+
+.downArrow_wrapper:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.20);
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Hero CSS ends */
+
+/* HeroPageCenter CSS starts */
+
+.text-section {
+    background: #eef2f7;
+}
+
+.test-contentItem {
+    background:
+        radial-gradient(circle at 10% 20%,
+            rgba(99, 102, 241, 0.15),
+            transparent 30%),
+        radial-gradient(circle at 90% 80%,
+            rgba(14, 165, 233, 0.12),
+            transparent 35%),
+        #e2e8f0;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.test-badge {
+    background: rgba(255, 255, 255, 0.6);
+    color: #484a4d;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.test-title {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.test-title span {
+    color: #6366f1;
+}
+
+.test-description {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.typing-test-row {
+    background:
+        radial-gradient(circle at 0% 50%,
+            rgba(99, 102, 241, 0.08),
+            transparent 35%),
+        #fff;
+
+    border-color: #e2e8f0 !important;
+
+    transition: 0.25s ease;
+}
+
+.typing-test-row:hover {
+    transform: translateY(-3px);
+}
+
+.typing-test-row:nth-child(2), :nth-child(4){
+    flex-direction: row-reverse;
+}
+
+/* .typing-test-image {
+    object-fit: cover;
+} */
+
+.typing-test-description-col h4 {
+    /* color: #1e293b; */
+     background: rgba(174, 212, 238, 0.252);
+    color: #484a4d;
+    font-size: 20px;
+    /* color:  var(--highlightColor);
+    font-weight: 700; */
+}
+
+.typing-test-description-col p {
+    /* color: #75787b; */
+    color: var(--primaryColor);
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.displayBox {
+    height: 280px;
+    width: 800px;
+}
+
+.typingBox {
+    height: 280px;
+    width: 800px;
+    color: blue;
+}

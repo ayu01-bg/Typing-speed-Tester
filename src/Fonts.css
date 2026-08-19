@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Bowly_one;
+    src: url('./assets/Fonts/Bowlby_One_SC/BowlbyOneSC-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bungee;
+    src: url('./assets/Fonts/Bungee/Bungee-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bungee_shade;
+    src: url('./assets/Fonts/Bungee_Shade/BungeeShade-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Courgette;
+    src: url('./assets/Fonts/Courgette/Courgette-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Honk;
+    src: url('./assets/Fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Nosifer;
+    src: url('./assets/Fonts/Nosifer/Nosifer-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/Fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto_italic;
+    src: url('./assets/Fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('./assets/Fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('./assets/Fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
