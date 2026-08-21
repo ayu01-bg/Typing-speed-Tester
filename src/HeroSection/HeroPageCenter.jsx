@@ -3,7 +3,7 @@ import timerTypingTest from '../assets/images/timerTypingTest.jpg'
 import { ArrowRight, Hourglass } from 'lucide-react'
 import aboutTestData from '../content/aboutTestData'
 import { Link } from 'react-router-dom'
-import DisplayBox from '../Display/DisplayBox/DisplayBox'
+import DisplayBox from '../Display/DisplayBox/DisplayControlBox'
 
 const HeroPageCenter = () => {
     return (
@@ -78,7 +78,7 @@ const HeroPageCenter = () => {
 
                 <div className="text-center py-4" id='btnDisplayBox'>
                     <Link
-                        to="/DisplayBox"
+                        to="/testing"
                         className="btn btn-dark btn-lg px-5 py-3 rounded-pill shadow-sm"
                     >
                         Start Your Progress

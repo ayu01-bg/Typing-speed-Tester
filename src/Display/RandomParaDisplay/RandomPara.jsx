@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-// import TypingBox from "../TypingBox/typingBox"
-import DisplayBox from "../DisplayBox/DisplayBox"
+import DisplayBox from "../DisplayBox/DisplayControlBox"
 import { typingParagraphs, getParagraph } from "../../content/Paragraph";
 import Navbar from "../../Navbar/Navbar";
 
@@ -22,11 +21,6 @@ const Randompara = () => {
                         paragraph={selectedParagraph}
                         onStart={handleClick}
                     />
-
-
-                    {/* <TypingBox
-                        paragraph={selectedParagraph}
-                    /> */}
                 </div>
             </div>
         </>

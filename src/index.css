@@ -181,23 +181,20 @@ body {
     background: linear-gradient(to top, #4fdbdb, #7f31df);
 }
 
+/* Randompara css ends */
+
+
 
 /* DisplayBox CSS starts */
-.displayBox p {
-    color: white;
-    line-height: 40px;
+.typing-content-section {
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 12px;
 }
 
-.displayBox::-webkit-scrollbar {
-    width: 6px;
-    background: transparent;
 
-}
-
-/* 
-.test-mode-button {
-   
-} */
 
 .test-mode-button {
     width: 100px;
@@ -206,10 +203,9 @@ body {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.45);
-
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-
+    outline: none;
     transition: all 0.25s ease;
 }
 
@@ -220,35 +216,86 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-
-/* DisplayBox CSS ends */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.displayBox {
-    height: 280px;
+.paraDisplayBox {
+    position: relative;
+    height: 200px;
     width: 800px;
+    background-color: rgba(221, 214, 214, 0.248);
 }
 
+.paraDisplayBox p {
+    color: white;
+    line-height: 40px;
+}
+
+.paraDisplayBox::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+
+.typing-paragraph-wrapper {
+    position: absolute;
+    transform: translateY(100%);
+}
+
+.typing-paragraph-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.paragraph-running {
+    animation: moveParaupward 80s linear 0s forwards;
+    animation-play-state: running;
+}
+
+.paragraph-paused {
+    animation-play-state: paused;
+}
+
+@keyframes moveParaupward {
+    from {
+        transform: translateY(27%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+
+}
+
+/* displayBoxController CSS Starts */
+.test-options-sidebar {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    outline: none;
+}
+
+.glass-sidebar .btn-light {
+    background: rgba(207, 206, 206, 0.5);
+    border: none;
+    outline: none;
+    color: #4268d8;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.glass-sidebar .btn-light:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(118, 116, 116);
+}
+
+/* paraDisplayBox CSS ends */
+
+
+/* displayBox CSS ends */
+
 .typingBox {
-    height: 280px;
+    background-color: transparent;
+    height: 220px;
     width: 800px;
     color: blue;
 }
