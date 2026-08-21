@@ -2,6 +2,7 @@ import React, { useState } from "react"
 // import TypingBox from "../TypingBox/typingBox"
 import DisplayBox from "../DisplayBox/DisplayBox"
 import { typingParagraphs, getParagraph } from "../../content/Paragraph";
+import Navbar from "../../Navbar/Navbar";
 
 const Randompara = () => {
     const [selectedParagraph, setselectedParagraph] = useState(null)
@@ -13,9 +14,9 @@ const Randompara = () => {
 
     return (
         <>
-            <div className="randomParaDisplay container-fluid border border-4 border-danger p-2">
-                <div className="row border border-2 gap-5 p-2 m-0 randomDisplay-wrapper ">
-
+            <div className="randomParaDisplay container-fluid">
+                <div className="row gap-5 p-2 m-0 randomDisplay-wrapper ">
+                    <Navbar />
 
                     <DisplayBox
                         paragraph={selectedParagraph}

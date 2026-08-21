@@ -1,6 +1,6 @@
 import React from 'react'
 import timerTypingTest from '../assets/images/timerTypingTest.jpg'
-import { Hourglass } from 'lucide-react'
+import { ArrowRight, Hourglass } from 'lucide-react'
 import aboutTestData from '../content/aboutTestData'
 import { Link } from 'react-router-dom'
 import DisplayBox from '../Display/DisplayBox/DisplayBox'
@@ -15,7 +15,7 @@ const HeroPageCenter = () => {
                         <div className="col-12 test-contentItem rounded-4 p-4 p-md-5 shadow-sm">
 
                             <span className="test-badge rounded-pill px-3 py-2">
-                                ⚡ Typing Speed Test
+                                ⚡Improve Your Typing Speed
                             </span>
 
                             <h2 className="test-title mt-3 fw-bold">
@@ -37,48 +37,54 @@ const HeroPageCenter = () => {
                 </div>
 
 
-                <div className="container typing-test-container p-3 mt-3">
+                <div className="container typing-test-container px-3 py-4 mt-3">
 
-                    {aboutTestData.map((rw, i) => {
-                        return (
-                            <div
-                                className="row typing-test-row justify-content-center
-                            p-2 m-0 rounded-4 shadow-sm mb-3
-                           align-items-center"
-                                key={i}
-                            >
+                    <div className="carousel slide" id='carouselSlide_wrapper '>
 
-                                <div className="col-lg-4 col-md-6 col-12 typing-test-image-col p-2">
-                                    <img
-                                        className="typing-test-image img-fluid rounded-4 shadow-sm"
-                                        src={timerTypingTest}
-                                        alt={rw.title}
-                                    />
-                                </div>
+                        <div className="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide-to="0" className="active" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
 
-                                <div className="col-lg-8 col-md-6 col-12 typing-test-description-col  p-3 p-lg-4 rounded-4">
+                        <div className="carousel-inner rounded-4 h-75" >
+                            {aboutTestData.map((rw, i) => {
+                                return (
 
-                                    <div className=' py-2'>
-                                        <h4 className="mb-3 d-inline rounded-5 p-2 fw-semibold ">
-                                            {rw.title}
-                                        </h4>
+                                    <div className={`carousel-item ${i === 0 ? "active" : ""}`} style={{ height: "800px" }} key={i} >
+                                        <img src={timerTypingTest} className="d-block w-100" alt="..." style={{ objectFit: "cover" }} />
+                                        <div className="carousel-caption d-block">
+                                            <h5>{rw.title}</h5>
+                                            <p>{rw.description}</p>
+                                        </div>
                                     </div>
+                                )
+                            })}
+                        </div>
 
-                                    <div>
-                                        <p className="mb-0 mt-2">
-                                            {rw.description}
-                                        </p>
-                                    </div>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselSlide_wrapper" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
 
-                                </div>
-                            </div>
-                        )
-                    })}
+                    </div>
 
                 </div>
 
-
-                    <Link to='/DisplayBox'>Start Your Progress</Link>
+                <div className="text-center py-4" id='btnDisplayBox'>
+                    <Link
+                        to="/DisplayBox"
+                        className="btn btn-dark btn-lg px-5 py-3 rounded-pill shadow-sm"
+                    >
+                        Start Your Progress
+                        <span className="ms-2">→</span>
+                    </Link>
+                </div>
 
             </section>
         </>

@@ -36,9 +36,9 @@ const HeroPageTop = () => {
                     </div>
 
                     <div className='downArrow_container text-center py-3'>
-                        <button className='downArrow_wrapper rounded-circle'>
-                            <ArrowDown size='28px' className=' text-white arrowDownIcon' />
-                        </button>
+                        <a href= "#btnDisplayBox" className='downArrow_wrapper rounded-circle d-inline-block' >
+                            <ArrowDown className=' text-white arrowDownIcon' />
+                        </a>
                     </div>
                 </div>
             </div>
